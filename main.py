@@ -50,7 +50,7 @@ async def upadte_usuarios(user_update: UpdateUsuario, id: UUID):
     for usuario in db:
         if usuario.id == id:
             if user_update.nombre is not None:
-                usuario.name = user_update.nombre
+                usuario.nombre = user_update.nombre
             if user_update.apellidos is not None:
                 usuario.apellidos = user_update.apellidos
             if user_update.genero is not None:
